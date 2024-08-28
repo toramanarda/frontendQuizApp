@@ -2,7 +2,7 @@
   "quizzes": [
     {
       "title": "HTML",
-      "icon": "/public/images/icon-html.svg",
+      "icon": "/images/icon-html.svg",
       "questions": [
         {
           "question": "HTML ne anlama gelir?",
@@ -118,7 +118,7 @@
     },
     {
       "title": "CSS",
-      "icon": "/public/images/icon-css.svg",
+      "icon": "/images/icon-css.svg",
       "questions": [
         {
           "question": "CSS ne anlama gelir?",
@@ -234,7 +234,7 @@
     },
     {
       "title": "JavaScript",
-      "icon": "/public/images/icon-js.svg",
+      "icon": "/images/icon-js.svg",
       "questions": [
         {
           "question": "'Merhaba Dünya' mesajını bir uyarı kutusunda göstermek için hangi sözdizimi doğrudur?",
@@ -350,7 +350,7 @@
     },
     {
       "title": "Erişilebilirlik",
-      "icon": "/public/images/icon-accessibility.svg",
+      "icon": "/images/icon-accessibility.svg",
       "questions": [
         {
           "question": "'WCAG' ne anlama gelir?",

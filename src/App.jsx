@@ -9,11 +9,11 @@ function Header({ setDarkMode }) {
 
   return (
     <div className="lightDarkMode">
-      <img src="/public/images/light-mode-icon.svg" alt="Light Mode Icon" />
+      <img src="/images/light-mode-icon.svg" alt="Light Mode Icon" />
       <div onClick={handleDarkMode} className="lightDarkModeButton">
-        <img src="/public/images/ellipse-10.svg" />
+        <img src="/images/ellipse-10.svg" />
       </div>
-      <img src="/public/images/dark-mode-icon.svg" alt="Dark Mode Icon" />
+      <img src="/images/dark-mode-icon.svg" alt="Dark Mode Icon" />
     </div>
   );
 }
