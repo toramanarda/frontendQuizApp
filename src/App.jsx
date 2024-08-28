@@ -21,6 +21,9 @@ function Header({ setDarkMode }) {
 function FinishQuiz({ setDarkMode, score, currentQuiz, setCurrentQuiz, setCurrentQuestion }) {
 
   function handlePlayAgain() {
+    localStorage.removeItem('currentQuiz');
+    localStorage.removeItem('currentQuestion');
+    localStorage.removeItem('score');
     setCurrentQuiz([]);
     setCurrentQuestion(0);
   }
@@ -62,9 +65,18 @@ function FinishQuiz({ setDarkMode, score, currentQuiz, setCurrentQuiz, setCurren
 function QuestionPage({ setDarkMode, currentQuiz, setCurrentQuiz, currentQuestion, setCurrentQuestion }) {
 
   const [userAnswer, setUserAnswer] = useState(null);
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(() => {
+    return localStorage.getItem('score') ? parseInt(localStorage.getItem('score')) : 0;
+  });
   const [submitted, setSubmitted] = useState(false);
   const [isSelectAnswer, setIsSelectAnswer] = useState(true);
+
+  useEffect(() => {
+
+    localStorage.setItem('currentQuiz', JSON.stringify(currentQuiz));
+    localStorage.setItem('currentQuestion', currentQuestion);
+    localStorage.setItem('score', score);
+  }, [currentQuiz, currentQuestion, score]);
 
   const handleAnswer = (answer) => {
     if (!submitted) {
@@ -127,7 +139,7 @@ function QuestionPage({ setDarkMode, currentQuiz, setCurrentQuiz, currentQuestio
             <div className="container">
               <div className="questionHeaderArea">
                 <div className="questionTitle">
-                  <img src={currentQuiz.icon} alt="Accessibility Icon" />
+                  <img src={currentQuiz.icon} alt={currentQuiz.title} />
                   <p>{currentQuiz.title}</p>
                 </div>
                 <div className="#">
@@ -148,7 +160,7 @@ function QuestionPage({ setDarkMode, currentQuiz, setCurrentQuiz, currentQuestio
                   {currentQuiz.questions[currentQuestion].options.map((answer, index) => (
                     <div key={index} className="answer" onClick={handleAnswerSelected}>
                       <button onClick={() => handleAnswer(answer)}>
-                        {index === 0 && <h2>A</h2> || index === 1 && <h2>B</h2> || index === 2 && <h2>C</h2> || index === 3 && <h2>D</h2>}
+                        {index === 0 ? <h2>A</h2> : index === 1 ? <h2>B</h2> : index === 2 ? <h2>C</h2> : <h2>D</h2>}
                         {' '}
                         <p>{answer}</p>
                       </button>
@@ -174,8 +186,16 @@ function QuestionPage({ setDarkMode, currentQuiz, setCurrentQuiz, currentQuestio
 }
 
 export default function App() {
-  const [currentQuiz, setCurrentQuiz] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentQuiz, setCurrentQuiz] = useState(() => {
+    const savedQuiz = localStorage.getItem('currentQuiz');
+    return savedQuiz ? JSON.parse(savedQuiz) : [];
+  });
+  const [currentQuestion, setCurrentQuestion] = useState(() => {
+    return localStorage.getItem('currentQuestion') ? parseInt(localStorage.getItem('currentQuestion')) : 0;
+  });
+  const [score, setScore] = useState(() => {
+    return localStorage.getItem('score') ? parseInt(localStorage.getItem('score')) : 0;
+  });
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
