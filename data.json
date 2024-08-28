@@ -1,0 +1,468 @@
+{
+  "quizzes": [
+    {
+      "title": "HTML",
+      "icon": "/src/assets/images/icon-html.svg",
+      "questions": [
+        {
+          "question": "HTML ne anlama gelir?",
+          "options": [
+            "Hiper Eğitmen Markalama Dili",
+            "Hiper Metin Pazarlama Dili",
+            "Hiper Metin İşaretleme Dili",
+            "Hiper Metin İşaretleme Seviyeleyici"
+          ],
+          "answer": "Hiper Metin İşaretleme Dili"
+        },
+        {
+          "question": "Bir HTML belgesinin doğru yapısı nedir?",
+          "options": [
+            "<html><head></head><body></body></html>",
+            "<head><html></html><body></body></head>",
+            "<body><head></head><html></html></body>",
+            "<html><body></body><head></head></html>"
+          ],
+          "answer": "<html><head></head><body></body></html>"
+        },
+        {
+          "question": "Bir belgenin başlığını tanımlamak için hangi HTML öğesi kullanılır?",
+          "options": [
+            "<head>",
+            "<title>",
+            "<header>",
+            "<top>"
+          ],
+          "answer": "<title>"
+        },
+        {
+          "question": "<body> etiketinin HTML'deki amacı nedir?",
+          "options": [
+            "Belgenin başlık bölümünü tanımlar.",
+            "Metin, resimler ve bağlantılar gibi tüm içeriği içerir.",
+            "HTML belgesinin ana içeriğini tanımlar.",
+            "HTML'de e-posta içeriğinin gövdesini tanımlar."
+          ],
+          "answer": "Metin, resimler ve bağlantılar gibi tüm içeriği içerir."
+        },
+        {
+          "question": "Bir köprü oluşturmak için hangi HTML etiketi kullanılır?",
+          "options": [
+            "<hyperlink>",
+            "<link>",
+            "<a>",
+            "<href>"
+          ],
+          "answer": "<a>"
+        },
+        {
+          "question": "HTML'de resimleri görüntülemek için hangi etiket kullanılır?",
+          "options": [
+            "<img>",
+            "<image>",
+            "<src>",
+            "<pic>"
+          ],
+          "answer": "<img>"
+        },
+        {
+          "question": "<img> etiketinde bir resmin yolunu sağlamak için hangi nitelik kullanılır?",
+          "options": [
+            "link",
+            "src",
+            "href",
+            "url"
+          ],
+          "answer": "src"
+        },
+        {
+          "question": "HTML'de sırasız bir liste oluşturmak için hangi etiket kullanılır?",
+          "options": [
+            "<ul>",
+            "<ol>",
+            "<list>",
+            "<li>"
+          ],
+          "answer": "<ul>"
+        },
+        {
+          "question": "<br> etiketi ne yapar?",
+          "options": [
+            "Metni iki bölüme böler.",
+            "Kalın metin oluşturur.",
+            "Bir satır boşluğu ekler.",
+            "Tabloda yeni bir satır ekler."
+          ],
+          "answer": "Bir satır boşluğu ekler."
+        },
+        {
+          "question": "HTML'de 'fieldset' etiketinin amacı nedir?",
+          "options": [
+            "Formdaki ilgili verileri gruplamak için kullanılır.",
+            "Alanı sabit bir boyuta ayarlar.",
+            "Formdaki alanları otomatik olarak doğrular.",
+            "Formdaki alanları gizler."
+          ],
+          "answer": "Formdaki ilgili verileri gruplamak için kullanılır."
+        },
+        {
+          "question": "HTML'de 'fieldset' etiketinin amacı nedir?",
+          "options": [
+            "Formdaki ilgili verileri gruplamak için kullanılır.",
+            "Alanı sabit bir boyuta ayarlar.",
+            "Formdaki alanları otomatik olarak doğrular.",
+            "Formdaki alanları gizler."
+          ],
+          "answer": "Formdaki ilgili verileri gruplamak için kullanılır."
+        }
+      ]
+    },
+    {
+      "title": "CSS",
+      "icon": "/src/assets/images/icon-css.svg",
+      "questions": [
+        {
+          "question": "CSS ne anlama gelir?",
+          "options": [
+            "Renkli Stil Sayfaları",
+            "Bilgisayar Stil Sayfaları",
+            "Ak cascading Stil Sayfaları",
+            "Yaratıcı Stil Sayfaları"
+          ],
+          "answer": "Ak cascading Stil Sayfaları"
+        },
+        {
+          "question": "Satır içi stilleri tanımlamak için hangi HTML niteliği kullanılır?",
+          "options": [
+            "styles",
+            "style",
+            "class",
+            "font-style"
+          ],
+          "answer": "style"
+        },
+        {
+          "question": "Bir CSS dosyasına yorum eklemek nasıl yapılır?",
+          "options": [
+            "// bu bir yorum //",
+            "/* bu bir yorum */",
+            "-- bu bir yorum --",
+            "<!-- bu bir yorum -->"
+          ],
+          "answer": "/* bu bir yorum */"
+        },
+        {
+          "question": "Bir öğenin arka plan rengini değiştirmek için hangi özellik kullanılır?",
+          "options": [
+            "color",
+            "bgcolor",
+            "background-color",
+            "background"
+          ],
+          "answer": "background-color"
+        },
+        {
+          "question": "<p> öğelerine stil uygulamak nasıl yapılır?",
+          "options": [
+            "p { }",
+            ".p { }",
+            "#p { }",
+            "all.p { }"
+          ],
+          "answer": "p { }"
+        },
+        {
+          "question": "Bir öğenin fontunu değiştirmek için hangi özellik kullanılır?",
+          "options": [
+            "font-style",
+            "text-style",
+            "font-family",
+            "typeface"
+          ],
+          "answer": "font-family"
+        },
+        {
+          "question": "Metindeki her kelimenin büyük harfle başlamasını nasıl sağlarsınız?",
+          "options": [
+            "text-transform: capitalize",
+            "text-transform: uppercase",
+            "text-style: capital",
+            "font-transform: capitalize"
+          ],
+          "answer": "text-transform: capitalize"
+        },
+        {
+          "question": "'header' sınıf adıyla bir öğeyi seçmek nasıl yapılır?",
+          "options": [
+            ".header",
+            "#header",
+            "header",
+            "*header"
+          ],
+          "answer": ".header"
+        },
+        {
+          "question": "'position' özelliğinin varsayılan değeri nedir?",
+          "options": [
+            "relative",
+            "fixed",
+            "absolute",
+            "static"
+          ],
+          "answer": "static"
+        },
+        {
+          "question": "CSS'deki z-index özelliğinin amacı nedir?",
+          "options": [
+            "Öğelerin sayısını saymak",
+            "Bir öğenin büyütme seviyesini ayarlamak",
+            "Bir öğenin yığın sırasını belirtmek",
+            "Büyütme efekti oluşturmak"
+          ],
+          "answer": "Bir öğenin yığın sırasını belirtmek"
+        },
+        {
+          "question": "CSS'deki z-index özelliğinin amacı nedir?",
+          "options": [
+            "Öğelerin sayısını saymak",
+            "Bir öğenin büyütme seviyesini ayarlamak",
+            "Bir öğenin yığın sırasını belirtmek",
+            "Büyütme efekti oluşturmak"
+          ],
+          "answer": "Bir öğenin yığın sırasını belirtmek"
+        }
+      ]
+    },
+    {
+      "title": "JavaScript",
+      "icon": "/src/assets/images/icon-js.svg",
+      "questions": [
+        {
+          "question": "'Merhaba Dünya' mesajını bir uyarı kutusunda göstermek için hangi sözdizimi doğrudur?",
+          "options": [
+            "alertBox('Merhaba Dünya');",
+            "msg('Merhaba Dünya');",
+            "alert('Merhaba Dünya');",
+            "msgBox('Merhaba Dünya');"
+          ],
+          "answer": "alert('Merhaba Dünya');"
+        },
+        {
+          "question": "'myFunction' adlı fonksiyonu nasıl çağırırsınız?",
+          "options": [
+            "call function myFunction()",
+            "call myFunction()",
+            "myFunction()",
+            "execute myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "JavaScript'te bir IF ifadesi nasıl yazılır?",
+          "options": [
+            "if i = 5 then",
+            "if (i == 5)",
+            "if i == 5",
+            "if i = 5"
+          ],
+          "answer": "if (i == 5)"
+        },
+        {
+          "question": "'i' değeri 5'E eşit değilse bazı kodları çalıştırmak için bir IF ifadesi nasıl yazılır?",
+          "options": [
+            "if (i <> 5)",
+            "if i =! 5 then",
+            "if (i != 5)",
+            "if i not = 5"
+          ],
+          "answer": "if (i != 5)"
+        },
+        {
+          "question": "Bir FOR döngüsü nasıl başlar?",
+          "options": [
+            "for (i = 0; i <= 5)",
+            "for i = 1 to 5",
+            "for (i <= 5; i++)",
+            "for (i = 0; i <= 5; i++)"
+          ],
+          "answer": "for (i = 0; i <= 5; i++)"
+        },
+        {
+          "question": "JavaScript'te tek satırlık bir yorum nasıl eklenir?",
+          "options": [
+            "'Bu bir tek satırlık yorum",
+            "//Bu bir tek satırlık yorum",
+            "<!--Bu bir tek satırlık yorum-->",
+            "/* Bu bir tek satırlık yorum */"
+          ],
+          "answer": "//Bu bir tek satırlık yorum"
+        },
+        {
+          "question": "Doğru bir JavaScript dizisi nasılyazılır?",
+          "options": [
+            "var colors = (1:'red', 2:'green', 3:'blue')",
+            "var colors = ['red', 'green', 'blue']",
+            "var colors = 'red', 'green', 'blue'",
+            "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+          ],
+          "answer": "var colors = ['red', 'green', 'blue']"
+        },
+        {
+          "question": "x ve y arasındaki en yüksek değeri nasıl bulursunuz?",
+          "options": [
+            "Math.ceil(x, y)",
+            "top(x, y)",
+            "Math.max(x, y)",
+            "Math.highest(x, y)"
+          ],
+          "answer": "Math.max(x, y)"
+        },
+        {
+          "question": "Bir değişkene değer atamak için hangi operatör kullanılır?",
+          "options": [
+            "-",
+            "*",
+            "=",
+            "x"
+          ],
+          "answer": "="
+        },
+        {
+          "question": "Doğru bir JavaScript nesnesi nasıl yazılır?",
+          "options": [
+            "var person = {firstName: 'John', lastName: 'Doe'};",
+            "var person = {firstName = 'John', lastName = 'Doe'};",
+            "var person = (firstName: 'John', lastName: 'Doe');",
+            "var person = (firstName = 'John', lastName = 'Doe');"
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        },
+        {
+          "question": "Doğru bir JavaScript nesnesi nasıl yazılır?",
+          "options": [
+            "var person = {firstName: 'John', lastName: 'Doe'};",
+            "var person = {firstName = 'John', lastName = 'Doe'};",
+            "var person = (firstName: 'John', lastName: 'Doe');",
+            "var person = (firstName = 'John', lastName = 'Doe');"
+          ],
+          "answer": "var person = {firstName: 'John', lastName: 'Doe'};"
+        }
+      ]
+    },
+    {
+      "title": "Erişilebilirlik",
+      "icon": "/src/assets/images/icon-accessibility.svg",
+      "questions": [
+        {
+          "question": "'WCAG' ne anlama gelir?",
+          "options": [
+            "Web İçeriği Erişilebilirlik Yönergeleri",
+            "Web Uyumluluk Erişilebilirlik Kılavuzu",
+            "Web İçeriği Erişilebilirlik Hedefleri",
+            "Web Sitesi Uyumluluk ve Erişilebilirlik Yönergeleri"
+          ],
+          "answer": "Web İçeriği Erişilebilirlik Yönergeleri"
+        },
+        {
+          "question": "Ekran okuyucu kullanıcıları için resimler için alternatif metni sağlamak hangi öğe kullanılır?",
+          "options": [
+            "<alt>",
+            "<figcaption>",
+            "<description>",
+            "<img alt='description'>"
+          ],
+          "answer": "<img alt='description'>"
+        },
+        {
+          "question": "Web geliştirmede ARIA ne anlama gelir?",
+          "options": [
+            "Erişilebilir Zengin İnternet Uygulamaları",
+            "Gelişmiş Yanıtlı İnternet Yardımı",
+            "Erişilebilir Yanıtlı İnternet Uygulamaları",
+            "Otomatik Yanıtlı İnternet Eylemleri"
+          ],
+          "answer": "Erişilebilir Zengin İnternet Uygulamaları"
+        },
+        {
+          "question": "Aşağıdakilerden hangisi WCAG'ın ilkelerinden biri değildir?",
+          "options": [
+            "Algılanabilir",
+            "Güvenilir",
+            "İşletilebilir",
+            "Anlaşılır"
+          ],
+          "answer": "Güvenilir"
+        },
+        {
+          "question": "Normal metin için minimum WCAG 2.1 Seviye AA gereksinimini tanımlayan renk kontrast oranı nedir?",
+          "options": [
+            "3:1",
+            "4.5:1",
+            "7:1",
+            "2:1"
+          ],
+          "answer": "4.5:1"
+        },
+        {
+          "question": "Aşağıdaki hangi öğe doğal olarak odaklanabilir, yani 'tabindex' niteliği olmadan odaklanabilir?",
+          "options": [
+            "<div>",
+            "<span>",
+            "<a href='...'>",
+            "<p>"
+          ],
+          "answer": "<a href='...'>"
+        },
+        {
+          "question": "'lang' niteliğinin HTML sayfasındaki amacı nedir?",
+          "options": [
+            "Betik dilini belirtmek için",
+            "Karakter kümesini tanımlamak için",
+            "Sayfa içeriğinin dilini belirtmek için",
+            "Bir dil paketi açıklamak için"
+          ],
+          "answer": "Sayfa içeriğinin dilini belirtmek için"
+        },
+        {
+          "question": "İçerik hem klavye hem de fare ile erişilebilir olmasını hangi kılavuz sağlar?",
+          "options": [
+            "Klavye Erişilebilir",
+            "Fare Bağımsızlığı",
+            "Aygıt Bağımsızlığı",
+            "İşletilebilir Kontroller"
+          ],
+          "answer": "Klavye Erişilebilir"
+        },
+        {
+          "question": "'skip navigation' bağlantılarının web erişilebilirliğindeki rolü nedir?",
+          "options": [
+            "Ana navigasyonu atlayarak ana içeriğe geçmek",
+            "Web sitesinin farklı bölümlerine kısayollar sağlamak",
+            "Kullanıcıların istenmeyen bölümleri, örneğin reklamları, atlamalarına yardımcı olmak",
+            "Navigasyondaki bozuk bağlantıları atlamak"
+          ],
+          "answer": "Ana navigasyonu atlayarak ana içeriğe geçmek"
+        },
+        {
+          "question": "Bir web sitesinin erişilebilirliğini kontrol etmeye yardımcı olabilecek araçlardan hangisi?",
+          "options": [
+            "W3C Validator",
+            "Google Lighthouse",
+            "CSS Validator",
+            "JavaScript Konsolu"
+          ],
+          "answer": "Google Lighthouse"
+        },
+        {
+          "question": "Bir web sitesinin erişilebilirliğini kontrol etmeye yardımcı olabilecek araçlardan hangisi?",
+          "options": [
+            "W3C Validator",
+            "Google Lighthouse",
+            "CSS Validator",
+            "JavaScript Konsolu"
+          ],
+          "answer": "Google Lighthouse"
+        }
+      ]
+    }
+  ]
+}
