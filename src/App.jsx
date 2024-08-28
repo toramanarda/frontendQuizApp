@@ -130,7 +130,7 @@ function QuestionPage({ setDarkMode, currentQuiz, setCurrentQuiz, currentQuestio
                   <img src={currentQuiz.icon} alt="Accessibility Icon" />
                   <p>{currentQuiz.title}</p>
                 </div>
-                <div className="div">
+                <div className="#">
                   <Header setDarkMode={setDarkMode} />
                 </div>
               </div>
